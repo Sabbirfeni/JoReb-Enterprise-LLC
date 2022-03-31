@@ -1,0 +1,452 @@
+/************************************
+Common css start
+************************************/
+/* Logo font family link */
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+/* Navbar item font family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h1 {
+    font-size: clamp(1.5rem, 3.7vw, 4rem)
+}
+p {
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
+}
+/************************************
+Common css end
+************************************/
+
+
+
+
+
+
+/************************************
+Header css start
+************************************/
+header {
+    width: 100%;
+    clear: both;
+}
+.header-area {
+    background-color: #151741;
+    width: 100%;
+    padding: 10px 80px;
+    /* min-height: 80px; */
+    display: flex;
+}
+.logo-container {
+    width: 40%;
+    float: left;
+}
+.nav-item-container {
+    width: 60%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-item-container ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-align: right;
+}
+.nav-item-container ul li {
+    display: inline-block;
+    margin-left: 60px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.nav-item-container ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+}
+.nav-item-container ul li a::after {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 4px;
+   background-color: #fcbb30;
+   bottom: -15px;
+   left: 0%;
+   transition: 0.4s;
+}
+.nav-item-container ul li a:hover::after {
+   width: 100%;
+ }
+.logo {
+    width: 70px;
+    height: 70px;
+}
+.logo-name {
+    font-family: 'Hurricane', cursive;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+/************************************
+Header css end
+************************************/
+
+
+
+
+
+
+/************************************
+Hero css start
+************************************/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/zetong-li-mVqTumQH-c0-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    text-align: center;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.6;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+    
+.hero h1, .hero h4, .hero h3 {
+    margin: 0%;
+    color: white;
+}
+.hero h1 {
+    font-size: clamp(2.2rem, 6vw, 6.6rem);
+}
+.hero h4 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+.hero h3 {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+/************************************
+Hero css end
+************************************/
+
+
+
+
+
+
+
+/************************************
+About us css start
+************************************/
+.about-us {
+    /* padding: 100px 0px; */
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/tim-van-der-kuip-CPs2X8JYmS8-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    top: 0%;
+    left: 0%;
+    z-index: -2;
+}
+.about-us-button {
+    color: #ffffff;
+    position: relative;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+.about-us-button:hover {
+    color: white;
+}
+.about-us-button::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #fcbb30;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    transition: 0.4s;
+    z-index: -1;
+}
+.about-us-button:hover::after {
+    width: 100%;
+    height: 100%;
+}
+/************************************
+About us section end
+************************************/
+
+
+
+
+
+
+/************************************
+Service section start
+************************************/
+.services {
+    padding: 80px 0px;
+}
+.service-container {
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    /* background-color: #fcbb30; */
+    /* padding: 20px; */
+}
+.service-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: #151741;
+    opacity: 0.7;
+    transition: 0.4s;
+    top: 0%;
+    left: 0%;
+}
+.service-container:hover::after {
+    height: 100%;
+}
+
+.service-container img {
+    width: 100%;
+    height: 100%;
+}
+.service-text {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    padding: 20px 30px;
+    color: white;
+    z-index: 2;
+}
+.service-text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #00000049 , #ffff0000);
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+.service-text h4 {
+    text-shadow: 5px 5px 10px #000000a4;
+}
+.service-text p {
+    display: none;
+    transition: 0.8s;
+    margin-top: 20px;
+}
+.service-container:hover .service-text p {
+    display: block;
+}
+.more-service {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/************************************
+Service section end
+************************************/
+
+
+
+
+
+
+/************************************
+Contact section start
+************************************/
+.contact {
+    padding: 80px 0px;
+    background-image: url('../images/fauzan-saari-pZXg_ObLOM4-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.contact h1 {
+    margin-bottom: 50px;
+    z-index: 2;
+}
+.contact-container {
+    width: 100%;
+    height: 30vh;
+    margin-top: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 19px -8px rgba(0,0,0,0.75);
+    position: relative;
+    text-decoration: none;
+    background-color: #ffffff;
+    z-index: 3;
+    padding: 20px;
+}
+.contact-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: #151741;
+    top: 0%;
+    left: 0%;
+    transition: 0.4s;
+    z-index: -1;
+    border-radius: 5px;
+}
+.contact-container:hover::after {
+    height: 100%;
+}
+.contact-container:hover {
+    color: white;
+    background-color: #ffffff;
+}
+.contact-container img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.contact-container h4 {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+/************************************
+Contact section end
+************************************/
+
+
+
+
+
+
+/************************************
+Footer section start
+************************************/
+.footer {
+    background-color: #151741;
+    padding: 30px 0px 10px 0px;
+}
+.footer-text {
+    text-align: center;
+}
+.footer-text h4 {
+    font-family: 'Hurricane', cursive;
+    color: white;
+}
+.social-media-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 7px;
+    transition: 0.3s;
+}
+.social-media-icon img:hover {
+    transform: scale(1.2);
+}
+/************************************
+Footer section end
+************************************/
+
+
+
+
+
+
+
+/************************************
+All page hero section start
+************************************/
+.page-hero {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #151741;
+    color: white;
+}
+/************************************
+All page hero section end
+************************************/
+
+
+
+
+
+
+
+/************************************
+Media query start
+************************************/
+@media only screen and (max-width: 992px) {
+    .services, .contact {
+        padding: 50px 0px;
+    }
+    .contact-container img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .services, .contact {
+        padding: 30px 0px;
+    }
+    .contact-container img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}
+/************************************
+Media query end
+************************************/
