@@ -29,9 +29,8 @@
         *****************************-->
         <header class="fixed-top">
           <nav class="header-area">
-            <div class="logo-container">
-              <h1 class="logo-name"><a href="index.html" style="text-decoration: none; color: white;">JoReb Enterprise LLC</a></h1>
-              <!-- <img class="logo" src="assets/images/Blue Black Modern Simple Letter B Logo Design.png" alt=""> -->
+            <div class="logo-container d-flex align-items-center">
+              <h1 class="logo-name"><a href="index.html" style="text-decoration: none; color: white;"><b>JoReb Enterprise LLC</b></a></h1>
             </div>
             <div class="nav-item-container">
               <ul>
@@ -41,6 +40,22 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
+
+                <!--******************
+                (Sidebar for tablet and mobile) section Start
+                ********************* -->
+                  <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About us</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                  </div>
+                  
+                  <button class="openbtn" onclick="openNav()">☰</button>
+                <!--******************
+                (Sidebar for tablet and mobile) section end
+                ********************* -->
           </nav>
         </header>
       <!--*****************************
@@ -338,6 +353,8 @@
   
 
 
+    <!-- Sidebar panel js -->
+    <script src="assets/js/script.js"></script>
 
     <!-- On scroll animation js link -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
